@@ -1,0 +1,53 @@
+# --- General ---
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~
+
+# --- Python / Flask (tech-debt-service) ---
+tech-debt-service/venv/
+tech-debt-service/env/
+tech-debt-service/.venv/
+tech-debt-service/__pycache__/
+tech-debt-service/*.pyc
+tech-debt-service/*.pyo
+tech-debt-service/build/
+tech-debt-service/dist/
+tech-debt-service/*.egg-info/
+tech-debt-service/.pytest_cache/
+tech-debt-service/.coverage*
+tech-debt-service/instance/
+tech-debt-service/cloned_repos/
+tech-debt-service/vector_store_faiss/
+
+# --- Node.js / React (tech-debt-ui) ---
+tech-debt-ui/node_modules/
+tech-debt-ui/build/
+tech-debt-ui/coverage/
+tech-debt-ui/.env*.local
+tech-debt-ui/.env.development.local
+tech-debt-ui/.env.test.local
+tech-debt-ui/.env.production.local
+tech-debt-ui/npm-debug.log*
+tech-debt-ui/yarn-debug.log*
+tech-debt-ui/yarn-error.log*
+
+# --- Application Specific (tech-debt-service) ---
+# Ignore sensitive environment variables
+tech-debt-service/.env
+
+# Ignore temporary cloned repositories
+tech-debt-service/cloned_repos/
+
+# Ignore generated RAG vector store index
+tech-debt-service/vector_store_faiss/
+
+# --- IDE / Editor ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# --- Optional: Add if you generate logs directly in service root ---
+# tech-debt-service/*.log

@@ -1,0 +1,13 @@
+Flask
+Flask-CORS
+python-dotenv
+requests
+openai
+ollama          # Official Ollama Python client
+GitPython
+langchain       # Using Langchain for RAG components (optional but convenient)
+langchain_community
+langchain_openai
+faiss-cpu       # Or faiss-gpu if you have CUDA installed
+sentence-transformers # For embeddings
+tiktoken        # Often needed by langchain/openai
